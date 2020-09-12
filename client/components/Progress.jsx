@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Progress() {
+function Progress({ progress, limit }) {
   return (
-    <div>Progress</div>
+    <div>Progress: {progress}/{limit}</div>
   );
 }
 
