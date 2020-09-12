@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/glindelien/hrr47-mvp/issues"
   },
-  "homepage": "https://github.com/glindelien/hrr47-mvp#readme"
+  "homepage": "https://github.com/glindelien/hrr47-mvp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
