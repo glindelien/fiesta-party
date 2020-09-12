@@ -7,7 +7,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      progress: 0,
       currentWord: 0,
       englishWords: [
         'party',
@@ -33,16 +32,36 @@ class App extends React.Component {
         music: ['música', 'musica'],
         code: ['código', 'codigo']
       },
+      userAnswer: '',
+      complete: false
     };
 
+    this.handleInputChange = this.handleInputChange.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
     this.makeProgress = this.makeProgress.bind(this);
     this.reverseProgress = this.reverseProgress.bind(this);
 
   }
 
-  checkAnswer() {
+  handleInputChange(e) {
+    const value = e.target.value;
+    const name = e.target.name;
+    this.setState({
+      [name]: value
+    });
+    console.log(value)
+    this.checkAnswer(value );
+  }
 
+  checkAnswer(attempt) {
+    let current = this.state.englishWords[this.state.currentWord];
+    let translations = this.state.spanishWords[current];
+    if (translations.includes(attempt)) {
+      this.setState({
+        currentWord: this.state.currentWord + 1,
+        userAnswer: ''
+      });
+    }
   }
 
   makeProgress() {
@@ -54,23 +73,33 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="main">
-        <div className="header">
-          Fiesta Party!
+    console.log(this.state)
+    // If level is complete, render Fiesta page
+    if (this.state.complete) {
+      return (
+        <div>Level Completed - it's Fiesta Time!</div>
+      );
+    } else {
+    // If level is NOT complete, render current word challenge
+      return (
+        <div className="main">
+          <div className="header">
+            Fiesta Party!
+          </div>
+          <div className="currentWord">
+            <CurrentWord word={this.state.englishWords[this.state.currentWord]}/>
+          </div>
+          <div className="input">
+            <Input answer={this.state.userAnswer}
+                   handleInputChange={this.handleInputChange}/>
+          </div>
+          <div className="progress">
+            <Progress progress={this.state.currentWord}
+                      limit={this.state.englishWords.length}/>
+          </div>
         </div>
-        <div className="currentWord">
-          <CurrentWord word={this.state.englishWords[this.state.currentWord]}/>
-        </div>
-        <div className="input">
-          <Input />
-        </div>
-        <div className="progress">
-          <Progress progress={this.state.progress}
-                    limit={this.state.englishWords.length}/>
-        </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
