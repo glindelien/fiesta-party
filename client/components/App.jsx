@@ -67,7 +67,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     // If level is complete, render Fiesta page
     if (this.state.complete) {
       return (
