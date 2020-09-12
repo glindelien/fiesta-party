@@ -36,3 +36,6 @@ bower_components/
 
 # AWS key
 fiestaparty.pem
+
+# Bundle
+main.js
