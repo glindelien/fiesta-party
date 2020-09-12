@@ -77,7 +77,7 @@ class App extends React.Component {
     // If level is complete, render Fiesta page
     if (this.state.complete) {
       return (
-        <div>Level Completed - it's Fiesta Time!</div>
+        <div className="complete">Level Completed - it's Fiesta Time!</div>
       );
     } else {
     // If level is NOT complete, render current word challenge

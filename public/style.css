@@ -1,18 +1,34 @@
-.main {
+.main, .complete {
   width: 500px;
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  padding-top: 20%;
+}
+
+.currentWord {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
 .header {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .input {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .progress {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }

@@ -3,9 +3,7 @@ import React from 'react';
 function CurrentWord({ word }) {
   return (
     <div>
-      translate:
-      <br />
-      {word}
+      word to translate: {word}
     </div>
   );
 }
