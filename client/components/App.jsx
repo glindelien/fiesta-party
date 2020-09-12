@@ -38,7 +38,6 @@ class App extends React.Component {
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
-    this.checkLevelCompletion = this.checkLevelCompletion.bind(this);
 
   }
 
@@ -48,8 +47,7 @@ class App extends React.Component {
     this.setState({
       [name]: value
     });
-    console.log(value)
-    this.checkAnswer(value );
+    this.checkAnswer(value);
   }
 
   checkAnswer(attempt) {
@@ -58,13 +56,10 @@ class App extends React.Component {
     if (translations.includes(attempt)) {
       this.setState({
         currentWord: this.state.currentWord + 1,
-        userAnswer: ''
+        userAnswer: '',
+        complete: this.state.currentWord + 1 === this.state.englishWords.length
       });
     }
-  }
-
-  checkLevelCompletion() {
-
   }
 
   render() {
@@ -72,15 +67,13 @@ class App extends React.Component {
     // If level is complete, render Fiesta page
     if (this.state.complete) {
       return (
-        <div className="complete">Level Completed - it's Fiesta Time!</div>
+        <div className="complete">It's Fiesta Time!</div>
       );
     } else {
     // If level is NOT complete, render current word challenge
       return (
         <div className="main">
-          <div className="header">
-            Fiesta Party!
-          </div>
+          <div className="header">Fiesta Party!</div>
           <div className="currentWord">
             <CurrentWord word={this.state.englishWords[this.state.currentWord]}/>
           </div>
