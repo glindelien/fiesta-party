@@ -1,4 +1,4 @@
-# Project Name #
+# Fiesta Builder #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,11 +16,11 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## Heading ##
-  > Fiesta Builder
+<!-- ## Heading ##
+  > Fiesta Builder -->
 
-## Sub-Heading ##
-  > Practice your Spanish skills while preparing for a Fiesta!
+## Learn Spanish and start the party with Fiesta Builder! ##
+  <!-- >  -->
 
 ## Summary ##
   > Fiesta Builder is a fun, interactive game meant to help you practice your Spanish skills! The goal is simple: given any English word, enter the Spanish translation. If your answer is correct, supplies for your Fiesta will begin to appear on the screen. Keep going until you're ready to party!
@@ -32,7 +32,7 @@ Once the project moves into development, the press release can be used as a touc
   > Fiesta Builder gives the user the visual satisfaction of submitting correct translations by introducing imagery on the page that represents the aspects of a party (The Fiesta) that we all know and love.
 
 ## Quote from You ##
-  > Learn Spanish and start the party with Fiesta Builder!
+  > Fiesta Builder is designed to help anyone learn or practice their Spanish skills. Instead of reading from a book, Fiesta Builder offers a fun and interactive experience that will keep learners engaged. This helps anyone build good habits for regular practice, which is essential to learning a new skill!
 
 ## How to Get Started ##
   > Start whenever you're ready by entering the Spanish translation and submitting it. You will progress with correct answers, but incorrect answers will undo some of your progress.
