@@ -1,4 +1,18 @@
 .main {
   width: 500px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+}
+
+.input {
+  width: 50%;
+}
+
+.progress {
+  width: 50%;
 }

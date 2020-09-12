@@ -5,5 +5,5 @@ const port = 3000;
 app.use(express.static('public'));
 
 app.listen(port, () => {
-  console.log(`Fiesta Builder listening at http://localhost:${port}`);
+  console.log(`Fiesta Party listening at http://localhost:${port}`);
 });
