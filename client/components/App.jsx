@@ -38,8 +38,7 @@ class App extends React.Component {
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
-    this.makeProgress = this.makeProgress.bind(this);
-    this.reverseProgress = this.reverseProgress.bind(this);
+    this.checkLevelCompletion = this.checkLevelCompletion.bind(this);
 
   }
 
@@ -64,11 +63,7 @@ class App extends React.Component {
     }
   }
 
-  makeProgress() {
-
-  }
-
-  reverseProgress() {
+  checkLevelCompletion() {
 
   }
 
