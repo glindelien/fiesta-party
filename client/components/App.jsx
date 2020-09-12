@@ -51,12 +51,16 @@ class App extends React.Component {
   }
 
   checkAnswer(attempt) {
+    // English word we're currently translating
     let current = this.state.englishWords[this.state.currentWord];
+    // Array of all correct translations
     let translations = this.state.spanishWords[current];
-    if (translations.includes(attempt)) {
+    // If translations array includes the user's attempt, progress to next word
+    if (translations.includes(attempt.toLowerCase())) {
       this.setState({
         currentWord: this.state.currentWord + 1,
         userAnswer: '',
+        // check if the current level is completed (check if it's Fiesta time!)
         complete: this.state.currentWord + 1 === this.state.englishWords.length
       });
     }
