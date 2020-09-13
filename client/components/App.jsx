@@ -9,7 +9,10 @@ class App extends React.Component {
 
     this.state = {
 
+      // index of current word to translate
       currentWord: 0,
+
+      // words to translate for this level
       englishWords: [
         'party',
         'hello',
@@ -23,6 +26,7 @@ class App extends React.Component {
         'code'
       ],
 
+      // translations for this level
       spanishWords: {
         party: ['fiesta'],
         hello: ['hola'],
@@ -36,8 +40,10 @@ class App extends React.Component {
         code: ['código', 'codigo']
       },
 
+      // value for user input field
       userAnswer: '',
 
+      // current completion status for this level
       complete: false
 
     };
@@ -48,6 +54,7 @@ class App extends React.Component {
 
   }
 
+  // update userAnswer in state when user types into input field
   handleInputChange(e) {
     const value = e.target.value;
     const name = e.target.name;
@@ -67,7 +74,9 @@ class App extends React.Component {
     // If translations array includes the user's attempt, progress to next word
     if (translations.includes(attempt.toLowerCase())) {
       this.setState({
+        // increment progress to next word
         currentWord: this.state.currentWord + 1,
+        // reset input field to blank string
         userAnswer: '',
         // check if the current level is completed (check if it's Fiesta time!)
         complete: this.state.currentWord + 1 === this.state.englishWords.length
