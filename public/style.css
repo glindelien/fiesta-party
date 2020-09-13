@@ -11,6 +11,15 @@ body {
   padding-top: 100px;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Nanum Pen Script';
+  font-size: 100px;
+  color: #008756;
+}
+
 .currentWord {
   width: 100%;
   display: flex;
@@ -18,13 +27,14 @@ body {
   padding: 50px;
 }
 
-.header {
+#currentWord {
   width: 100%;
   display: flex;
   justify-content: center;
+  color: #e8371c;
   font-family: 'Nanum Pen Script';
-  font-size: 100px;
-  color: #ebab34;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .input {
@@ -37,7 +47,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 #progressBar {
@@ -47,9 +58,13 @@ body {
 }
 
 #item {
-  padding: 20px;
+  padding: 10px;
   margin: 5px;
-  border: 1px solid #000000;
-  display: flex;
-  align-items: center;
+  /* border: 1px solid #000000; */
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  text-align: center;
 }

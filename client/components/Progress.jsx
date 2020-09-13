@@ -15,7 +15,9 @@ function Progress({ progress, limit }) {
   ];
   return (
     <div>
-      Fiesta Supplies Acquired: {progress}/{limit}
+      <div>
+        Fiesta Supplies Acquired: {progress}/{limit}
+      </div>
       <div id="progressBar">
         {supplies.map((item) =>
           <div id="item" key={item}>{item}</div>
@@ -26,3 +28,5 @@ function Progress({ progress, limit }) {
 }
 
 export default Progress;
+
+// check mark in HTML &#10003;
