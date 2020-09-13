@@ -1,5 +1,5 @@
 .main, .complete {
-  width: 500px;
+  width: 1000px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -30,5 +30,19 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  margin-top: 50px;
+}
+
+#progressBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#item {
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
 }

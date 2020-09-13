@@ -1,8 +1,27 @@
 import React from 'react';
 
 function Progress({ progress, limit }) {
+  let supplies = [
+    'Tequila',
+    'Limes',
+    'Cerveza',
+    'Piñata',
+    'Guacamole',
+    'Tacos',
+    'Playlist',
+    'Party Favors',
+    'Confetti',
+    'Friends'
+  ];
   return (
-    <div>Progress: {progress}/{limit}</div>
+    <div>
+      Fiesta Supplies Acquired: {progress}/{limit}
+      <div id="progressBar">
+        {supplies.map((item) =>
+          <div id="item" key={item}>{item}</div>
+        )}
+      </div>
+    </div>
   );
 }
 
