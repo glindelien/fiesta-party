@@ -64,7 +64,7 @@ class App extends React.Component {
     this.checkAnswer(value);
   }
 
-  checkAnswer(attempt) {
+  checkAnswer(answer) {
 
     // English word we're currently translating
     let current = this.state.englishWords[this.state.currentWord];
@@ -75,11 +75,11 @@ class App extends React.Component {
 
     });
 
-    // modify user attempt so it is not case sensitive & ignores accents
-    attempt = attempt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    // modify user answer so it is not case sensitive & ignores accents
+    answer = answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
-    // If translations array includes the user's attempt, progress to next word
-    if (translations.includes(attempt)) {
+    // If translations array includes the user's answer, progress to next word
+    if (translations.includes(answer)) {
       this.setState({
         // increment progress to next word
         currentWord: this.state.currentWord + 1,
