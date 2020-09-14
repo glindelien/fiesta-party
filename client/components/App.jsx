@@ -15,36 +15,36 @@ class App extends React.Component {
       // words to translate for this level
       englishWords: [
         'party',
-        // 'hello',
-        // 'goodbye',
-        // 'dog',
-        // 'cat',
-        // 'food',
-        // 'taco',
-        // 'beer',
-        // 'music',
-        // 'code'
+        'hello',
+        'goodbye',
+        'dog',
+        'cat',
+        'food',
+        'taco',
+        'beer',
+        'music',
+        'code'
       ],
 
       // translations for this level
       spanishWords: {
-        party: ['a', 'fiesta'],
-        // hello: ['hola'],
-        // goodbye: ['adios'],
-        // dog: ['perro', 'perra'],
-        // cat: ['gato', 'gata'],
-        // food: ['comida'],
-        // taco: ['taco'],
-        // beer: ['cerveza'],
-        // music: ['musica'],
-        // code: ['codigo']
+        party: ['fiesta'],
+        hello: ['hola'],
+        goodbye: ['adios'],
+        dog: ['perro', 'perra'],
+        cat: ['gato', 'gata'],
+        food: ['comida'],
+        taco: ['taco'],
+        beer: ['cerveza'],
+        music: ['musica'],
+        code: ['codigo']
       },
 
       // value for user input field
       userAnswer: '',
 
       // current completion status for this level
-      complete: true
+      complete: false
 
     };
 
@@ -150,7 +150,7 @@ class App extends React.Component {
 
           {/* progress */}
           <div className="progress">
-            <Progress progress={this.state.currentWord}
+            <Progress current={this.state.currentWord}
               limit={this.state.englishWords.length} />
           </div>
 
