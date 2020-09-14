@@ -3,9 +3,9 @@ import React from 'react';
 function CurrentWord({ word }) {
   return (
     <div>
-      Translate the word to Spanish and start acquiring your party supplies!
+      Translate the word below to Spanish and start acquiring your party supplies!
       <br/><br/>
-      <span id="currentWord">{word}</span>
+      <span id="currentWord">{word} = ?</span>
     </div>
   );
 }

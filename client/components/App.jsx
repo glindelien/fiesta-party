@@ -44,7 +44,7 @@ class App extends React.Component {
       userAnswer: '',
 
       // current completion status for this level
-      complete: false
+      complete: true
 
     };
 
@@ -90,10 +90,26 @@ class App extends React.Component {
     // if level is complete, render Fiesta page
     if (this.state.complete) {
       return (
-        <div className="complete">It's Fiesta Time!</div>
+        <div className="main">
+
+          {/* logo image */}
+          <img src="logo.png"></img>
+
+          {/* header */}
+          <div className="header">It's Fiesta Time!</div>
+
+          {/* play again button */}
+          <div id="playAgain"
+            onClick={() => this.setState({
+              complete: false,
+              currentWord: 0})}>
+            Play Again
+          </div>
+
+        </div>
       );
 
-    // if level is NOT complete, render current word challenge
+      // if level is NOT complete, render current word challenge
     } else {
       return (
         <div className="main">
@@ -106,19 +122,19 @@ class App extends React.Component {
 
           {/* current word to translate */}
           <div className="currentWord">
-            <CurrentWord word={this.state.englishWords[this.state.currentWord]}/>
+            <CurrentWord word={this.state.englishWords[this.state.currentWord]} />
           </div>
 
           {/* input field */}
           <div className="input">
             <Input answer={this.state.userAnswer}
-                   handleInputChange={this.handleInputChange}/>
+              handleInputChange={this.handleInputChange} />
           </div>
 
           {/* progress */}
           <div className="progress">
             <Progress progress={this.state.currentWord}
-                      limit={this.state.englishWords.length}/>
+              limit={this.state.englishWords.length} />
           </div>
 
         </div>
