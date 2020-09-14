@@ -30,18 +30,21 @@ class App extends React.Component {
       spanishWords: {
         party: ['fiesta'],
         hello: ['hola'],
-        goodbye: ['adios', 'adiós'],
+        goodbye: ['adios'],
         dog: ['perro', 'perra'],
         cat: ['gato', 'gata'],
         food: ['comida'],
         taco: ['taco'],
         beer: ['cerveza'],
-        music: ['música', 'musica'],
-        code: ['código', 'codigo']
+        music: ['musica'],
+        code: ['codigo']
       },
 
       // value for user input field
       userAnswer: '',
+
+      // check if input is correct so far
+      correctSoFar: true,
 
       // current completion status for this level
       complete: false
@@ -71,8 +74,15 @@ class App extends React.Component {
     // Array of all correct translations
     let translations = this.state.spanishWords[current];
 
+    translations.forEach((word) => {
+
+    });
+
+    // modify user attempt so it is not case sensitive & ignores accents
+    attempt = attempt.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+
     // If translations array includes the user's attempt, progress to next word
-    if (translations.includes(attempt.toLowerCase())) {
+    if (translations.includes(attempt)) {
       this.setState({
         // increment progress to next word
         currentWord: this.state.currentWord + 1,

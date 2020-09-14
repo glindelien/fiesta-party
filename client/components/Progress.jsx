@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Progress({ progress, limit }) {
+
   let supplies = [
     'Tequila',
     'Limes',
@@ -13,6 +14,7 @@ function Progress({ progress, limit }) {
     'Confetti',
     'Friends'
   ];
+
   return (
     <div>
       <div>
@@ -29,6 +31,7 @@ function Progress({ progress, limit }) {
       </div>
     </div>
   );
+
 }
 
 export default Progress;
