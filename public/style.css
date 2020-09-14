@@ -126,21 +126,25 @@ img {
 #balloons {
   top: 20%;
   left: 70%;
+  height: 220px;
+  width: auto;
 }
 
 #cerveza {
   top: 10%;
   left: 80%;
+  height: 160px;
+  width: auto;
 }
 
 #guacamole {
   top: 40%;
-  left: 20%;
+  left: 15%;
 }
 
 #limes {
   top: 20%;
-  left: 10%;
+  left: 8%;
 }
 
 #music {
@@ -155,10 +159,12 @@ img {
 
 #taco {
   top: 40%;
-  left: 60%;
+  left: 65%;
+  height: 160px;
+  width: auto;
 }
 
 #tequila {
-  top: 40%;
-  left: 30%;
+  top: 38%;
+  left: 29%;
 }

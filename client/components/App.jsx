@@ -15,29 +15,29 @@ class App extends React.Component {
       // words to translate for this level
       englishWords: [
         'party',
-        'hello',
-        'goodbye',
-        'dog',
-        'cat',
-        'food',
-        'taco',
-        'beer',
-        'music',
-        'code'
+        // 'hello',
+        // 'goodbye',
+        // 'dog',
+        // 'cat',
+        // 'food',
+        // 'taco',
+        // 'beer',
+        // 'music',
+        // 'code'
       ],
 
       // translations for this level
       spanishWords: {
-        party: ['fiesta'],
-        hello: ['hola'],
-        goodbye: ['adios'],
-        dog: ['perro', 'perra'],
-        cat: ['gato', 'gata'],
-        food: ['comida'],
-        taco: ['taco'],
-        beer: ['cerveza'],
-        music: ['musica'],
-        code: ['codigo']
+        party: ['a', 'fiesta'],
+        // hello: ['hola'],
+        // goodbye: ['adios'],
+        // dog: ['perro', 'perra'],
+        // cat: ['gato', 'gata'],
+        // food: ['comida'],
+        // taco: ['taco'],
+        // beer: ['cerveza'],
+        // music: ['musica'],
+        // code: ['codigo']
       },
 
       // value for user input field
