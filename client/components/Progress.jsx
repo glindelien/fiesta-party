@@ -9,7 +9,7 @@ function Progress({ progress, limit }) {
     'Guacamole',
     'Tacos',
     'Playlist',
-    'Party Favors',
+    'Balloons',
     'Confetti',
     'Friends'
   ];
@@ -19,9 +19,13 @@ function Progress({ progress, limit }) {
         Fiesta Supplies Acquired: {progress}/{limit}
       </div>
       <div id="progressBar">
-        {supplies.map((item) =>
-          <div id="item" key={item}>{item}</div>
-        )}
+        {supplies.map((item, index) => {
+          if (index < progress) {
+            return <div id="itemAcquired" key={index}>{item}</div>;
+          } else {
+            return <div id="item" key={index}>{item}</div>;
+          }
+        })}
       </div>
     </div>
   );
@@ -30,3 +34,4 @@ function Progress({ progress, limit }) {
 export default Progress;
 
 // check mark in HTML &#10003;
+// refactor to make progressbar its own component
