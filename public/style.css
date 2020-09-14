@@ -114,3 +114,51 @@ img {
 #img {
   height: 25px;
 }
+
+/* FIESTA TIME */
+
+.fiestaImg {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+
+#balloons {
+  top: 20%;
+  left: 70%;
+}
+
+#cerveza {
+  top: 10%;
+  left: 80%;
+}
+
+#guacamole {
+  top: 40%;
+  left: 20%;
+}
+
+#limes {
+  top: 20%;
+  left: 10%;
+}
+
+#music {
+  top: 40%;
+  left: 80%;
+}
+
+#pinata {
+  top: 10%;
+  left: 20%;
+}
+
+#taco {
+  top: 40%;
+  left: 60%;
+}
+
+#tequila {
+  top: 40%;
+  left: 30%;
+}

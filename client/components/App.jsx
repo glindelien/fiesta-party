@@ -110,8 +110,18 @@ class App extends React.Component {
             onClick={() => this.setState({
               complete: false,
               currentWord: 0})}>
-            Play Again
+              Play Again
           </div>
+
+          {/* images */}
+          <img class="fiestaImg" id= "balloons" src="/fiesta/balloons.png"></img>
+          <img class="fiestaImg" id= "cerveza" src="/fiesta/cerveza.png"></img>
+          <img class="fiestaImg" id= "guacamole" src="/fiesta/guacamole.png"></img>
+          <img class="fiestaImg" id= "limes" src="/fiesta/limes.png"></img>
+          <img class="fiestaImg" id= "music" src="/fiesta/music.png"></img>
+          <img class="fiestaImg" id= "pinata" src="/fiesta/pinata.png"></img>
+          <img class="fiestaImg" id= "taco" src="/fiesta/taco.png"></img>
+          <img class="fiestaImg" id= "tequila" src="/fiesta/tequila.png"></img>
 
         </div>
       );
