@@ -39,3 +39,6 @@ fiestaparty.pem
 
 # Bundle
 main.js
+
+#DS Store
+.DS_store

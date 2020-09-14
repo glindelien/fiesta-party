@@ -43,11 +43,8 @@ class App extends React.Component {
       // value for user input field
       userAnswer: '',
 
-      // check if input is correct so far
-      correctSoFar: true,
-
       // current completion status for this level
-      complete: false
+      complete: true
 
     };
 
