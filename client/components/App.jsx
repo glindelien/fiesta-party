@@ -98,6 +98,9 @@ class App extends React.Component {
       return (
         <div className="main">
 
+          {/* logo image */}
+          <img src="logo.png"></img>
+
           {/* header */}
           <div className="header">Fiesta Party!</div>
 
