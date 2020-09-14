@@ -16,7 +16,7 @@ function Progress({ progress, limit }) {
   return (
     <div>
       <div>
-        Fiesta Supplies Acquired: {progress}/{limit}
+        <span id="status">Fiesta Supplies Acquired: {progress}/{limit}</span>
       </div>
       <div id="progressBar">
         {supplies.map((item, index) => {

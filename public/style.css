@@ -25,6 +25,8 @@ img {
   font-size: 100px;
   color: #1f95ba;
   font-weight: 800;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 20px;
 }
 
 #playAgain {
@@ -71,6 +73,10 @@ img {
   justify-content: center;
   text-align: center;
   margin-top: 60px;
+}
+
+#status {
+  font-size: 20px;
 }
 
 #progressBar {

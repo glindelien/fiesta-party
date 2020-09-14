@@ -44,7 +44,7 @@ class App extends React.Component {
       userAnswer: '',
 
       // current completion status for this level
-      complete: true
+      complete: false
 
     };
 
