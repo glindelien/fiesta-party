@@ -21,7 +21,8 @@ img {
   justify-content: center;
   font-family: 'Nanum Pen Script';
   font-size: 100px;
-  color: #008756;
+  color: #1f95ba;
+  font-weight: 800;
 }
 
 .currentWord {
@@ -38,7 +39,7 @@ img {
   color: #e8371c;
   font-family: 'Nanum Pen Script';
   font-size: 75px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .input {
