@@ -47,11 +47,6 @@ img {
   justify-content: center;
 }
 
-input {
-  width: 150px;
-  height: 50px;
-}
-
 .progress {
   width: 100%;
   display: flex;
@@ -69,7 +64,6 @@ input {
 #item {
   padding: 10px;
   margin: 5px;
-  /* border: 1px solid #000000; */
   width: 75px;
   height: 30px;
   line-height: 30px;
@@ -82,7 +76,6 @@ input {
 #itemAcquired {
   padding: 10px;
   margin: 5px;
-  /* border: 1px solid #000000; */
   width: 75px;
   height: 30px;
   line-height: 30px;
@@ -91,4 +84,8 @@ input {
   color: #FFFFFF;
   text-align: center;
   font-size: 13px;
+}
+
+#img {
+  height: 25px;
 }

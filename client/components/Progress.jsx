@@ -21,7 +21,7 @@ function Progress({ progress, limit }) {
       <div id="progressBar">
         {supplies.map((item, index) => {
           if (index < progress) {
-            return <div id="itemAcquired" key={index}>{item}</div>;
+            return <div id="itemAcquired" key={index}><img id="img" src="logo.png"></img></div>;
           } else {
             return <div id="item" key={index}>{item}</div>;
           }
