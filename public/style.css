@@ -117,10 +117,21 @@ img {
 
 /* FIESTA TIME */
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .fiestaImg {
   position: absolute;
   height: 200px;
   width: 200px;
+  visibility: hidden;
 }
 
 #balloons {
@@ -128,6 +139,8 @@ img {
   left: 70%;
   height: 220px;
   width: auto;
+  animation: fadeIn ease 1s 0.25s;
+  animation-fill-mode: forwards;
 }
 
 #cerveza {
@@ -135,26 +148,36 @@ img {
   left: 80%;
   height: 160px;
   width: auto;
+  animation: fadeIn ease 1s 1s;
+  animation-fill-mode: forwards;
 }
 
 #guacamole {
   top: 40%;
   left: 15%;
+  animation: fadeIn ease 1s 0.5s;
+  animation-fill-mode: forwards;
 }
 
 #limes {
   top: 20%;
   left: 8%;
+  animation: fadeIn ease 1s 0.75s;
+  animation-fill-mode: forwards;
 }
 
 #music {
   top: 40%;
   left: 80%;
+  animation: fadeIn ease 1s 1.5s;
+  animation-fill-mode: forwards;
 }
 
 #pinata {
   top: 10%;
   left: 20%;
+  animation: fadeIn ease 1s 1.25s;
+  animation-fill-mode: forwards;
 }
 
 #taco {
@@ -162,9 +185,13 @@ img {
   left: 65%;
   height: 160px;
   width: auto;
+  animation: fadeIn ease 1s 2s;
+  animation-fill-mode: forwards;
 }
 
 #tequila {
   top: 38%;
   left: 29%;
+  animation: fadeIn ease 1s 1.75s;
+  animation-fill-mode: forwards;
 }
