@@ -18,28 +18,29 @@ function Progress({ current, limit }) {
   const supplies = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
-      <div id="progressBar">
-        {supplies.map((item, index) => {
+    <div id="progressBar">
 
-          if (index === current) {
-            return <div id="itemAcquired" key={index}><img id="img" src="/fiesta/pinata.png"></img></div>;
-          }
+      {supplies.map((item, index) => {
 
-          if (index < current) {
-            return <div id="itemAcquired" key={index}><img id="hat" src="logo.png"></img></div>;
-          }
+        if (index === current) {
+          return <div id="itemAcquired" key={index}><img id="img" src="/fiesta/pinata.png"></img></div>;
+        }
 
-          if (index > current && index < 10) {
-            return <div id="item" key={index}></div>;
-          }
+        if (index < current) {
+          return <div id="itemAcquired" key={index}><img id="img" src="logo.png"></img></div>;
+        }
 
-          if (index === 10) {
-            return <div id="item" key={index}><img id="img" src="/fiesta/guacamole.png"></img></div>;
-          }
+        if (index > current && index < 10) {
+          return <div id="item" key={index}></div>;
+        }
 
-          }
-        )}
-      </div>
+        if (index === 10) {
+          return <div id="item" key={index}><img id="img" src="/fiesta/guacamole.png"></img></div>;
+        }
+
+      })}
+
+    </div>
   );
 
 }
