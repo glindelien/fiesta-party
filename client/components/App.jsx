@@ -16,35 +16,35 @@ class App extends React.Component {
       englishWords: [
         'party',
         'hello',
-        'goodbye',
-        'dog',
-        'cat',
-        'food',
-        'taco',
-        'beer',
-        'music',
-        'code'
+        // 'goodbye',
+        // 'dog',
+        // 'cat',
+        // 'food',
+        // 'taco',
+        // 'beer',
+        // 'music',
+        // 'code'
       ],
 
       // translations for this level
       spanishWords: {
         party: ['fiesta'],
         hello: ['hola'],
-        goodbye: ['adios'],
-        dog: ['perro', 'perra'],
-        cat: ['gato', 'gata'],
-        food: ['comida'],
-        taco: ['taco'],
-        beer: ['cerveza'],
-        music: ['musica'],
-        code: ['codigo']
+        // goodbye: ['adios'],
+        // dog: ['perro', 'perra'],
+        // cat: ['gato', 'gata'],
+        // food: ['comida'],
+        // taco: ['taco'],
+        // beer: ['cerveza'],
+        // music: ['musica'],
+        // code: ['codigo']
       },
 
       // value for user input field
       userAnswer: '',
 
       // current completion status for this level
-      complete: true
+      complete: false
 
     };
 
@@ -78,16 +78,24 @@ class App extends React.Component {
     // modify user answer so it is not case sensitive & ignores accents
     answer = answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
+    // set timeout if it's the last level
+    let timeout = 0;
+    if (this.state.currentWord === this.state.englishWords.length - 1) {
+      timeout = 200;
+    }
+
     // If translations array includes the user's answer, progress to next word
     if (translations.includes(answer)) {
-      this.setState({
-        // increment progress to next word
-        currentWord: this.state.currentWord + 1,
-        // reset input field to blank string
-        userAnswer: '',
-        // check if the current level is completed (check if it's Fiesta time!)
-        complete: this.state.currentWord + 1 === this.state.englishWords.length
-      });
+      setTimeout(() => {
+        this.setState({
+          // increment progress to next word
+          currentWord: this.state.currentWord + 1,
+          // reset input field to blank string
+          userAnswer: '',
+          // check if the current level is completed (check if it's Fiesta time!)
+          complete: this.state.currentWord + 1 === this.state.englishWords.length
+        });
+      }, timeout);
     }
 
   }
@@ -109,19 +117,20 @@ class App extends React.Component {
           <div id="playAgain"
             onClick={() => this.setState({
               complete: false,
-              currentWord: 0})}>
-              Play Again
+              currentWord: 0
+            })}>
+            Play Again
           </div>
 
           {/* images */}
-          <img class="fiestaImg" id= "balloons" src="/fiesta/balloons.png"></img>
-          <img class="fiestaImg" id= "cerveza" src="/fiesta/cerveza.png"></img>
-          <img class="fiestaImg" id= "guacamole" src="/fiesta/guacamole.png"></img>
-          <img class="fiestaImg" id= "limes" src="/fiesta/limes.png"></img>
-          <img class="fiestaImg" id= "music" src="/fiesta/music.png"></img>
-          <img class="fiestaImg" id= "pinata" src="/fiesta/pinata.png"></img>
-          <img class="fiestaImg" id= "taco" src="/fiesta/taco.png"></img>
-          <img class="fiestaImg" id= "tequila" src="/fiesta/tequila.png"></img>
+          <img class="fiestaImg" id="balloons" src="/fiesta/balloons.png"></img>
+          <img class="fiestaImg" id="cerveza" src="/fiesta/cerveza.png"></img>
+          <img class="fiestaImg" id="guacamole" src="/fiesta/guacamole.png"></img>
+          <img class="fiestaImg" id="limes" src="/fiesta/limes.png"></img>
+          <img class="fiestaImg" id="music" src="/fiesta/music.png"></img>
+          <img class="fiestaImg" id="pinata" src="/fiesta/pinata.png"></img>
+          <img class="fiestaImg" id="taco" src="/fiesta/taco.png"></img>
+          <img class="fiestaImg" id="tequila" src="/fiesta/tequila.png"></img>
 
         </div>
       );
