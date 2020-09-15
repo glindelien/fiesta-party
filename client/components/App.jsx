@@ -2,6 +2,7 @@ import React from 'react';
 import CurrentWord from './CurrentWord.jsx';
 import Input from './Input.jsx';
 import Progress from './Progress.jsx';
+import Confetti from './Confetti.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,28 +17,28 @@ class App extends React.Component {
       englishWords: [
         'party',
         'hello',
-        // 'goodbye',
-        // 'dog',
-        // 'cat',
-        // 'food',
-        // 'taco',
-        // 'beer',
-        // 'music',
-        // 'code'
+        'goodbye',
+        'dog',
+        'cat',
+        'food',
+        'taco',
+        'beer',
+        'music',
+        'code'
       ],
 
       // translations for this level
       spanishWords: {
         party: ['fiesta'],
         hello: ['hola'],
-        // goodbye: ['adios'],
-        // dog: ['perro', 'perra'],
-        // cat: ['gato', 'gata'],
-        // food: ['comida'],
-        // taco: ['taco'],
-        // beer: ['cerveza'],
-        // music: ['musica'],
-        // code: ['codigo']
+        goodbye: ['adios'],
+        dog: ['perro', 'perra'],
+        cat: ['gato', 'gata'],
+        food: ['comida'],
+        taco: ['taco'],
+        beer: ['cerveza'],
+        music: ['musica'],
+        code: ['codigo']
       },
 
       // value for user input field
@@ -106,6 +107,7 @@ class App extends React.Component {
     if (this.state.complete) {
       return (
         <div className="main">
+          <Confetti />
 
           {/* logo image */}
           <img src="logo.png"></img>
@@ -123,14 +125,14 @@ class App extends React.Component {
           </div>
 
           {/* images */}
-          <img class="fiestaImg" id="balloons" src="/fiesta/balloons.png"></img>
-          <img class="fiestaImg" id="cerveza" src="/fiesta/cerveza.png"></img>
-          <img class="fiestaImg" id="guacamole" src="/fiesta/guacamole.png"></img>
-          <img class="fiestaImg" id="limes" src="/fiesta/limes.png"></img>
-          <img class="fiestaImg" id="music" src="/fiesta/music.png"></img>
-          <img class="fiestaImg" id="pinata" src="/fiesta/pinata.png"></img>
-          <img class="fiestaImg" id="taco" src="/fiesta/taco.png"></img>
-          <img class="fiestaImg" id="tequila" src="/fiesta/tequila.png"></img>
+          <img className="fiestaImg" id="balloons" src="/fiesta/balloons.png"></img>
+          <img className="fiestaImg" id="cerveza" src="/fiesta/cerveza.png"></img>
+          <img className="fiestaImg" id="guacamole" src="/fiesta/guacamole.png"></img>
+          <img className="fiestaImg" id="limes" src="/fiesta/limes.png"></img>
+          <img className="fiestaImg" id="music" src="/fiesta/music.png"></img>
+          <img className="fiestaImg" id="pinata" src="/fiesta/pinata.png"></img>
+          <img className="fiestaImg" id="taco" src="/fiesta/taco.png"></img>
+          <img className="fiestaImg" id="tequila" src="/fiesta/tequila.png"></img>
 
         </div>
       );
