@@ -15,7 +15,7 @@ const Levels = [
     ],
 
     spanishWords: {
-      party: ['fiesta'],
+      party: ['fiesta', 'partido'],
       hello: ['hola'],
       goodbye: ['adios'],
       dog: ['perro', 'perra'],
@@ -47,7 +47,7 @@ const Levels = [
       'excuse me': ['disculpe', 'perdon', 'perdoneme'],
       small: ['pequena', 'pequeno', 'poquito'],
       big: ['grande', 'enorme'],
-      go: ['adelante'],
+      go: ['adelante', 'ir', 'vamos'],
       stop: ['alto'],
       'good morning': ['buenos dias', 'buen dia', 'buenas', 'arriba'],
       'good afternoon': ['buenas tardes'],
