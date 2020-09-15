@@ -94,7 +94,8 @@ class App extends React.Component {
           <div id="playAgain"
             onClick={() => this.setState({
               complete: false,
-              currentWord: 0
+              currentWord: 0,
+              level: this.state.level + 1
             })}>
             Play Again
           </div>
@@ -131,13 +132,13 @@ class App extends React.Component {
           {/* input field */}
           <div className="input">
             <Input answer={this.state.userAnswer}
-              handleInputChange={this.handleInputChange} />
+                   handleInputChange={this.handleInputChange} />
           </div>
 
           {/* progress */}
           <div className="progress">
             <Progress current={this.state.currentWord}
-              limit={this.state.englishWords.length} />
+                      limit={this.state.englishWords.length} />
           </div>
 
         </div>
