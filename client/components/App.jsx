@@ -10,25 +10,18 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-
       // current level of gameplay
       level: 0,
-
       // index of current word to translate
       currentWord: 0,
-
       // words to translate for this level
       englishWords: [],
-
       // translations for this level
       spanishWords: {},
-
       // value for user input field
       userAnswer: '',
-
       // current completion status for this level
       complete: false
-
     };
 
     // bind methods to correct context
