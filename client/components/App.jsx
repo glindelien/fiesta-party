@@ -21,12 +21,15 @@ class App extends React.Component {
       // value for user input field
       userAnswer: '',
       // current completion status for this level
-      complete: false
+      complete: false,
+      // text to display for button
+      buttonText: 'Next Level'
     };
 
     // bind methods to correct context
     this.handleInputChange = this.handleInputChange.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
+    this.playAgain = this.playAgain.bind(this);
 
   }
 
@@ -69,6 +72,28 @@ class App extends React.Component {
     }
   }
 
+  playAgain() {
+    if (this.state.level + 1 === Levels.length - 1) {
+      this.setState({
+        complete: false,
+        currentWord: 0,
+        level: this.state.level + 1,
+        englishWords: Levels[this.state.level + 1].englishWords,
+        spanishWords: Levels[this.state.level + 1].spanishWords,
+        buttonText: 'Start Over'
+      });
+    } else {
+      this.setState({
+        complete: false,
+        currentWord: 0,
+        level: 0,
+        englishWords: Levels[0].englishWords,
+        spanishWords: Levels[0].spanishWords,
+        buttonText: 'Next Level'
+      });
+    }
+  }
+
   componentDidMount() {
     this.setState({
       englishWords: Levels[this.state.level].englishWords,
@@ -77,7 +102,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
 
     // if level is complete, render Fiesta page
     if (this.state.complete) {
@@ -93,14 +117,8 @@ class App extends React.Component {
 
           {/* play again button */}
           <div id="playAgain"
-            onClick={() => this.setState({
-              complete: false,
-              currentWord: 0,
-              level: this.state.level + 1,
-              englishWords: Levels[this.state.level + 1].englishWords,
-              spanishWords: Levels[this.state.level + 1].spanishWords
-            })}>
-            Next Level
+            onClick={this.playAgain}>
+            {this.state.buttonText}
           </div>
 
           {/* fiesta images */}
@@ -135,13 +153,13 @@ class App extends React.Component {
           {/* input field */}
           <div className="input">
             <Input answer={this.state.userAnswer}
-                   handleInputChange={this.handleInputChange} />
+              handleInputChange={this.handleInputChange} />
           </div>
 
           {/* progress */}
           <div className="progress">
             <Progress current={this.state.currentWord}
-                      limit={this.state.englishWords.length} />
+              limit={this.state.englishWords.length} />
           </div>
 
         </div>
