@@ -21,7 +21,7 @@ class App extends React.Component {
       // value for user input field
       userAnswer: '',
       // current completion status for this level
-      complete: true
+      complete: false
     };
 
     // bind methods to correct context
