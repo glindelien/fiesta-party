@@ -3,6 +3,7 @@ import CurrentWord from './CurrentWord.jsx';
 import Input from './Input.jsx';
 import Progress from './Progress.jsx';
 import Confetti from './Confetti.jsx';
+import Levels from '../levels.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,36 +11,17 @@ class App extends React.Component {
 
     this.state = {
 
+      // current level of gameplay
+      level: 0,
+
       // index of current word to translate
       currentWord: 0,
 
       // words to translate for this level
-      englishWords: [
-        'party',
-        'hello',
-        'goodbye',
-        'dog',
-        'cat',
-        'food',
-        'taco',
-        'beer',
-        'music',
-        'code'
-      ],
+      englishWords: [],
 
       // translations for this level
-      spanishWords: {
-        party: ['fiesta'],
-        hello: ['hola'],
-        goodbye: ['adios'],
-        dog: ['perro', 'perra'],
-        cat: ['gato', 'gata'],
-        food: ['comida'],
-        taco: ['taco'],
-        beer: ['cerveza'],
-        music: ['musica'],
-        code: ['codigo']
-      },
+      spanishWords: {},
 
       // value for user input field
       userAnswer: '',
@@ -66,16 +48,10 @@ class App extends React.Component {
   }
 
   checkAnswer(answer) {
-
     // English word we're currently translating
     let current = this.state.englishWords[this.state.currentWord];
     // Array of all correct translations
     let translations = this.state.spanishWords[current];
-
-    translations.forEach((word) => {
-
-    });
-
     // modify user answer so it is not case sensitive & ignores accents
     answer = answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
@@ -98,7 +74,13 @@ class App extends React.Component {
         });
       }, timeout);
     }
+  }
 
+  componentDidMount() {
+    this.setState({
+      englishWords: Levels[this.state.level].englishWords,
+      spanishWords: Levels[this.state.level].spanishWords
+    });
   }
 
   render() {
@@ -124,7 +106,7 @@ class App extends React.Component {
             Play Again
           </div>
 
-          {/* images */}
+          {/* fiesta images */}
           <img className="fiestaImg" id="balloons" src="/fiesta/balloons.png"></img>
           <img className="fiestaImg" id="cerveza" src="/fiesta/cerveza.png"></img>
           <img className="fiestaImg" id="guacamole" src="/fiesta/guacamole.png"></img>
@@ -142,7 +124,7 @@ class App extends React.Component {
       return (
         <div className="main">
 
-          {/* logo image */}
+          {/* sombrero image */}
           <img src="logo.png"></img>
 
           {/* header */}
