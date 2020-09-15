@@ -1,4 +1,4 @@
-# Fiesta Builder #
+# Fiesta Party #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 <!-- ## Heading ##
-  > Fiesta Builder -->
+  > Fiesta Party -->
 
-## Learn Spanish and start the party with Fiesta Builder! ##
+## Learn Spanish and start the party with Fiesta Party! ##
   <!-- >  -->
 
 ## Summary ##
-  > Fiesta Builder is a fun, interactive game meant to help you practice your Spanish skills! The goal is simple: given any English word, enter the Spanish translation. If your answer is correct, supplies for your Fiesta will begin to appear on the screen. Keep going until you're ready to party!
+  > Fiesta Party is a fun, interactive game meant to help you practice your Spanish skills! The goal is simple: given any English word, enter the Spanish translation. If your answer is correct, supplies for your Fiesta will begin to appear on the screen. Keep going until you're ready to party!
 
 ## Problem ##
-  > Fiesta Builder helps users practice their Spanish translation skills in a fun and engaging way.
+  > Fiesta Party helps users practice their Spanish translation skills in a fun and engaging way.
 
 ## Solution ##
-  > Fiesta Builder gives the user the visual satisfaction of submitting correct translations by introducing imagery on the page that represents the aspects of a party (The Fiesta) that we all know and love.
+  > Fiesta Party gives the user the visual satisfaction of submitting correct translations by introducing imagery on the page that represents the aspects of a party (The Fiesta) that we all know and love.
 
 ## Quote from You ##
-  > Fiesta Builder is designed to help anyone learn or practice their Spanish skills. Instead of reading from a book, Fiesta Builder offers a fun and interactive experience that will keep learners engaged. This helps anyone build good habits for regular practice, which is essential to learning a new skill!
+  > Fiesta Party is designed to help anyone learn or practice their Spanish skills. Instead of reading from a book, Fiesta Party offers a fun and interactive experience that will keep learners engaged. This helps anyone build good habits for regular practice, which is essential to learning a new skill!
 
 ## How to Get Started ##
-  > Start whenever you're ready by entering the Spanish translation and submitting it. You will progress with correct answers, but incorrect answers will undo some of your progress.
+  > Start whenever you're ready by entering the Spanish translation and submitting it. The goal is to help the Unicorn Piñata reach the guacamole, and then the Fiesta can begin! Each time you enter a correct answer, the Unicorn Piñata will move forward one space.
 
 ## Customer Quote ##
-  > "Fiesta Builder is a super fun and addicting way to practice my Spanish skills!"
+  > "Fiesta Party is a super fun and addicting way to practice my Spanish skills!"
 
 ## Closing and Call to Action ##
-  > Keep an eye out for future updates! We'll be adding additional advanced content and new types of party themes.
+  > Keep an eye out for future updates! We'll be adding additional content and new types of party themes to choose from.
