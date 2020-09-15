@@ -21,7 +21,7 @@ class App extends React.Component {
       // value for user input field
       userAnswer: '',
       // current completion status for this level
-      complete: false
+      complete: true
     };
 
     // bind methods to correct context
@@ -77,6 +77,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state);
 
     // if level is complete, render Fiesta page
     if (this.state.complete) {
@@ -95,9 +96,11 @@ class App extends React.Component {
             onClick={() => this.setState({
               complete: false,
               currentWord: 0,
-              level: this.state.level + 1
+              level: this.state.level + 1,
+              englishWords: Levels[this.state.level + 1].englishWords,
+              spanishWords: Levels[this.state.level + 1].spanishWords
             })}>
-            Play Again
+            Next Level
           </div>
 
           {/* fiesta images */}
