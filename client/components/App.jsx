@@ -147,7 +147,8 @@ class App extends React.Component {
 
           {/* current word to translate */}
           <div className="currentWord">
-            <CurrentWord word={this.state.englishWords[this.state.currentWord]} />
+            <CurrentWord word={this.state.englishWords[this.state.currentWord]}
+                         level={this.state.level} />
           </div>
 
           {/* input field */}
