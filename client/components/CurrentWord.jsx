@@ -7,7 +7,7 @@ function CurrentWord({ word, level }) {
       {/* Translate the word below to Spanish and start acquiring your party supplies! */}
       Help the unicorn piñata get to the guacamole by translating the word below into Spanish!
       <br /><br />
-      <ChooseLevel level={level} />
+      <ChooseLevel />
       <span id="currentWord">{word} = ?</span>
     </div>
   );

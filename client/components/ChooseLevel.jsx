@@ -1,10 +1,10 @@
 import React from 'react';
 
-function ChooseLevel({ level }) {
+function ChooseLevel() {
   return (
-    <div>
-      {level}
-    </div>
+    <select>
+      <option>1</option>
+    </select>
   );
 }
 
