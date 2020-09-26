@@ -27,10 +27,26 @@ class App extends React.Component {
     };
 
     // bind methods to correct context
+    this.chooseLevel = this.chooseLevel.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
     this.playAgain = this.playAgain.bind(this);
 
+  }
+
+  // choose a level to play
+  chooseLevel(e) {
+    const value = e.target.value;
+    const levelIndex = value - 1;
+    this.setState({
+      level: levelIndex,
+      currentWord: 0,
+      englishWords: Levels[levelIndex].englishWords,
+      spanishWords: Levels[levelIndex].spanishWords,
+      userAnswer: '',
+      complete: false,
+      buttonText: levelIndex < Levels.length - 1 ? 'Next Level' : 'Start Over'
+    });
   }
 
   // update userAnswer in state when user types into input field
@@ -147,7 +163,8 @@ class App extends React.Component {
 
           {/* current word to translate */}
           <div className="currentWord">
-            <CurrentWord word={this.state.englishWords[this.state.currentWord]} />
+            <CurrentWord word={this.state.englishWords[this.state.currentWord]}
+                         chooseLevel={this.chooseLevel} />
           </div>
 
           {/* input field */}
