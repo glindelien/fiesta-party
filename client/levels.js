@@ -15,8 +15,8 @@ const Levels = [
     ],
 
     spanishWords: {
-      party: ['fiesta', 'partido'],
-      hello: ['hola'],
+      hello: ['hola', 'buenas'],
+      'how are you?': ['como estas', '¿como estas?'],
       goodbye: ['adios'],
       dog: ['perro', 'perra'],
       cat: ['gato', 'gata'],
@@ -24,7 +24,7 @@ const Levels = [
       taco: ['taco'],
       beer: ['cerveza'],
       music: ['musica'],
-      code: ['codigo']
+      party: ['fiesta', 'partido']
     }
   },
 
