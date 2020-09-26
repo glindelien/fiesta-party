@@ -2,8 +2,8 @@ const Levels = [
 
   {
     englishWords: [
-      'party',
       'hello',
+      'how are you?',
       'goodbye',
       'dog',
       'cat',
@@ -11,7 +11,7 @@ const Levels = [
       'taco',
       'beer',
       'music',
-      'code'
+      'party'
     ],
 
     spanishWords: {
