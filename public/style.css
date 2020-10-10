@@ -68,8 +68,10 @@ img {
 }
 
 input {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  font-family: 'Nanum Pen Script';
+  font-size: 25px;
 }
 
 .progress {
