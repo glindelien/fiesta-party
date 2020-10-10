@@ -4,6 +4,10 @@ body {
   color: #2b2b2b;
 }
 
+input, textarea, select, a {
+  outline: none;
+}
+
 img {
   height: 150px;
 }
