@@ -67,6 +67,11 @@ img {
   justify-content: center;
 }
 
+input {
+  padding: 20px;
+  text-align: center;
+}
+
 .progress {
   width: 100%;
   display: flex;
