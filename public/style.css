@@ -80,6 +80,7 @@ input {
   color: #e8371c;
   background-color: #ffe4b2;
   border: 3px solid #ffd485;
+  border-radius: 10px;
 }
 
 .progress {
