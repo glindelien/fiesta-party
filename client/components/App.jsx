@@ -68,9 +68,9 @@ class App extends React.Component {
     answer = answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
     // set timeout if it's the last level
-    let timeout = 0;
+    let timeout = 200;
     if (this.state.currentWord === this.state.englishWords.length - 1) {
-      timeout = 200;
+      timeout = 400;
     }
 
     // If translations array includes the user's answer, progress to next word
