@@ -3,7 +3,7 @@ import levels from '../levels.js';
 
 function ChooseLevel({ chooseLevel }) {
   return (
-    <div className="dropdown">
+    <div className="select">
       <select onChange={chooseLevel}>
         <option>Choose a level!</option>
         {levels.map((level, index) => {
