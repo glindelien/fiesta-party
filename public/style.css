@@ -33,21 +33,6 @@ img {
   padding-bottom: 20px;
 }
 
-#playAgain {
-  margin-top: 50px;
-  font-family: 'Nanum Pen Script';
-  font-size: 50px;
-  color: #FFFFFF;
-  background-color: #008756;
-  padding: 15px;
-  border-radius: 20px;
-}
-
-#playAgain:hover {
-  cursor: pointer;
-  background-color: #e8371c;
-}
-
 .currentWord {
   width: 100%;
   display: flex;
@@ -92,10 +77,6 @@ input {
   margin-top: 60px;
 }
 
-#status {
-  font-size: 20px;
-}
-
 #progressBar {
   display: flex;
   justify-content: center;
@@ -133,6 +114,21 @@ input {
 }
 
 /* FIESTA TIME */
+
+#playAgain {
+  margin-top: 50px;
+  font-family: 'Nanum Pen Script';
+  font-size: 50px;
+  color: #FFFFFF;
+  background-color: #008756;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#playAgain:hover {
+  cursor: pointer;
+  background-color: #e8371c;
+}
 
 @keyframes fadeIn {
   0% {
