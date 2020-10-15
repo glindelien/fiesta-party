@@ -1,6 +1,6 @@
 const levels = require('../client/levels.js');
 
-describe('Test Game Levels File', () => {
+describe('Test Game Levels', () => {
 
   test('Levels object should be defined', () => {
     expect(levels).toBeDefined();
