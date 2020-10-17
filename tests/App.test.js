@@ -1,5 +1,15 @@
+import React from 'react';
+import Enzyme from 'enzyme';
+import { shallow, mount, render } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import App from '../client/components/App.jsx';
 
-test('App should be defined', () => {
-  expect(App).toBeDefined();
+Enzyme.configure({ adapter: new Adapter() });
+
+describe('<App />', () => {
+  it('App component should exist', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toBeDefined();
+  });
+
 });
