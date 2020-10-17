@@ -10,4 +10,13 @@ describe('Test Game Levels', () => {
     expect(levels.default).toHaveLength(2);
   });
 
+  test('Each level object should have an "englishWords" array and "spanishWords" object as a property', () => {
+    levels.default.forEach((level) => {
+      expect(level.englishWords).toBeDefined();
+      expect(Array.isArray(level.englishWords)).toBe(true);
+      expect(level.spanishWords).toBeDefined();
+      expect(typeof level.spanishWords === 'object').toBe(true);
+    })
+  })
+
 });
