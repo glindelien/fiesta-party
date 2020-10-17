@@ -17,6 +17,6 @@ describe('Test Game Levels', () => {
       expect(level.spanishWords).toBeDefined();
       expect(typeof level.spanishWords === 'object').toBe(true);
     })
-  })
+  });
 
 });
