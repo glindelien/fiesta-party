@@ -61,6 +61,18 @@ img {
   font-weight: 600;
 }
 
+#unicorn, #guac {
+  font-weight: 700;
+}
+
+#unicorn {
+  color: #1f95ba;
+}
+
+#guac {
+  color: #008756;
+}
+
 /* INPUT FIELD */
 
 .input {
