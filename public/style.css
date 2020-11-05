@@ -61,7 +61,7 @@ img {
   font-weight: 600;
 }
 
-#unicorn, #guac {
+#unicorn, #guac, #spanish {
   font-weight: 700;
 }
 
@@ -71,6 +71,10 @@ img {
 
 #guac {
   color: #008756;
+}
+
+#spanish {
+  color: #e8371c;
 }
 
 /* INPUT FIELD */
