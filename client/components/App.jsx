@@ -5,6 +5,10 @@ import Progress from './Progress.jsx';
 import Confetti from './Confetti.jsx';
 import Levels from '../levels.js';
 
+// Revisit heirarchy of components
+// Stub out new design for SoC and reusable components
+// Refactor to cleaner React design
+
 class App extends React.Component {
   constructor(props) {
     super(props);
