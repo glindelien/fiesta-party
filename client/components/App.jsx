@@ -130,18 +130,22 @@ class App extends React.Component {
           <Confetti />
 
           {/* logo image */}
+          {/* refactor: make component */}
           <img src="logo.png"></img>
 
           {/* header */}
+          {/* refactor: make component */}
           <div className="header">It's Fiesta Time!</div>
 
           {/* play again button */}
+          {/* refactor: make component */}
           <div id="playAgain"
             onClick={this.playAgain}>
             {this.state.buttonText}
           </div>
 
           {/* fiesta images */}
+          {/* refactor: make component */}
           <img className="fiestaImg" id="balloons" src="/fiesta/balloons.png"></img>
           <img className="fiestaImg" id="cerveza" src="/fiesta/cerveza.png"></img>
           <img className="fiestaImg" id="guacamole" src="/fiesta/guacamole.png"></img>
@@ -160,24 +164,29 @@ class App extends React.Component {
         <div className="main">
 
           {/* sombrero image */}
+          {/* refactor: make component */}
           <img src="logo.png"></img>
 
           {/* header */}
+          {/* refactor: make component */}
           <div className="header">Fiesta Party!</div>
 
           {/* current word to translate */}
+          {/* refactor: move div into component */}
           <div className="currentWord">
             <CurrentWord word={this.state.englishWords[this.state.currentWord]}
                          chooseLevel={this.chooseLevel} />
           </div>
 
           {/* input field */}
+          {/* refactor: move div into component */}
           <div className="input">
             <Input answer={this.state.userAnswer}
               handleInputChange={this.handleInputChange} />
           </div>
 
           {/* progress */}
+          {/* refactor: move div into component */}
           <div className="progress">
             <Progress current={this.state.currentWord}
               limit={this.state.englishWords.length} />
